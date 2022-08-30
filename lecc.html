@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <!-- <style>
+        .red {
+            color: red;
+            font-size: xx-large;
+        }
+    </style> -->
+    <!-- <style>
+        #div1 {
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+            border: 5px solid blue;
+            background-color: lightblue;
+        }
+    </style> -->
+    <style>
+    div * { 
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+      }
+      .siblings * { 
+  display: block;
+  border: 2px solid lightgrey;
+  color: lightgrey;
+  padding: 5px;
+  margin: 15px;
+}
+    </style>
+</head>
+
+<body>
+    <div>div (parent)
+        <p class="useclass">My name is Donald (index 0).</p>
+        <p class="useclass">Donald Duck (index 1).</p>
+        <p>I live in Duckburg (index 2).</p>
+        <p>My best friend is Mickey (index 3).</p>
+        
+      </div>
+    <!-- <div id="div1"></div>
+    <button id="dime">dimension</button>
+    <div id="mydiv" style="background-color:#ff0000">this is div for check css class</div>
+    <button id="btn">button</button>
+    <button id="btn2">remove</button> -->
+    <button id="show">click</button>
+    <!-- <div id="mydiv1">
+        <div>div (great-grandparent)
+            <ul>ul (grandparent)
+                <li id="myli">li (direct parent)
+                    <span>span</span>
+                </li>
+            </ul>
+        </div> -->
+<!-- 
+        <div id="div3">div (grandparent)
+            <p class="first"    >p (direct parent)
+               
+            </p>
+            <p>p2</p>
+        </div>
+    </div> -->
+    <script>
+     $(document).ready(function(){
+         $("#show").click(function(){
+             $("p").not(".useclass").css({"color": "red", "border": "3px solid blue"});
+         });
+     });    
+  
+     
+        // $(document).ready(function () {
+        //     $("#show").click(function () {
+                // alert($("#myli").parent().html())
+                // $("#div3").find("*").css({"color": "red", "border": "2px solid red"});
+                // let arr = $("div").parentsUntil();
+                // console.log(arr);
+        //     });
+        // });
+
+        // $(document).ready(function () {
+        // $("#btn").click(function () {
+        //     $("div").toggleClass("red");
+        // });
+        // $("#btn2").click(function() {
+        //    $("#mydiv").css("color", "white");
+        //    $("#mydiv").css({"background-color": "green", "font-size":"200%"});
+        // });
+
+        // $("#btn2").click(function(){
+        //     $("div").removeClass("red");
+        // });
+        // });
+
+        // $(document).ready(function () {
+        //     $("#dime").click(function () {
+        //         $("#div1").width(500).height(500);
+                // var text = "";
+                // text += " innerwidth is =" +$("#div1").outerWidth(true) +"</br>"  ;
+                // text += "innerheight is =" +$("#div1").outerHeight(true);
+                //  alert(text);
+
+                // text += "Document width/height: " + $(document).width();
+                // text += "x" + $(document).height() + "\n";
+                // text += "Window width/height: " + $(window).width();
+                // text += "x" + $(window).height();
+                // alert(text);
+        //     });
+        // });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        #div1,
+        #div2 {
+
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+
+        }
+
+
+        #div2 {
+            padding: 50px;
+            display: none;
+
+        }
+        .red{
+            color: red;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <p style="display: none;">welcome to igap <br> -->
+    <!-- <!-- <p>
+        welcome to igapbr <br>
+        welcome to igapbr <br>
+        welcome to igapbr <br>
+        welcome to igapbr <br>
+    </p> -->
+    <!-- <p>jhahk</p>
+    <p id="text">safajkjg</p>
+    <p id="demo">ldfgkaj</p>
+    <h1 id="h1">jquery</h1><br>
+
+    <div id="div3">Hello welcome</div><br>
+    <div id="div4">Hello</div><br>
+  <input type="text" id="val"><br><br>
+    <button id="showtext">text</button>
+    <button id="showhtml">Html</button>
+    <button id="showval">val</button>
+    
+    <button id="attr">Attr</button><br><br> -->
+    <div id="div1">Click to slide down panel</div>
+    <!-- <div id="div2">Hello world!</div>
+
+    <a href="bfdsfh" id="a">link</a><br><br> -->
+    
+
+<button id="add">show</button><br><br><br><br> -->
+
+    <!-- <div id="ani" style="background:#98bf21;height:100px;width:700px;position:absolute;">kishori</div><br> -->
+<!-- 
+    <p><a href="https://www.w3schools.com" id="w">W3Schools.com</a></p> -->
+<div id="ani" style="background-color: aqua;">kishori</div>
+<button id="remove">button</button>
+
+    <script>
+        //    $("p").hide();
+
+        //    $(".button").click(function()
+        //    {
+        //     alert("you click button");
+        //    });
+        //    $("#h1").hide()
+
+        // $(document).ready(function(){
+        //     $("p").hover(function(){
+        //         alert("hover event");
+        //     });
+        // } );
+
+        // $(document).ready(function() {
+        //     $("p").mouseenter(function() {
+        //         alert("hover event");
+        //     });
+        //     $("p").mouseleave(function() {
+        //         alert("your leaving in p");
+        //     });
+        // });
+        // $(document).ready(function(){
+        //     $("input").focus(function(){
+        //         $(this).css("background-color", "red");
+        //     });
+        //         $("input").blur(function(){
+        //             $(this).css("background-color", "blue");
+        //         });
+        // });
+        // $(document).ready(function(){
+        //     // $("p").click(function(){
+        //     //     $(this).hide();
+        //     // });
+
+        //     $(".button").click(function(){
+        //         $("p").toggle(2000, function(){
+        //             alert("toggle success");
+        //         });
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("p").fadeTo("show",0.15);
+        //     });
+        // });
+
+        // $(document).ready(function (){
+        //     $("#div1").click(function() {
+        //         $("#div2").slideToggle();
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("#ani").animate({left: '300px'});
+        //     });
+        // });
+
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("#ani").animate({ right: '250px', opacity: '0.5', height: '+=200px',
+        //          width: '+=200px' });
+        //     });
+        // });
+
+        // $(document).ready(function () {
+        //     $("button").click(function () {
+        //         $("#ani").animate({ height: 'toggle'});
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         var div1 = $("#ani");
+        //         div1.animate({right:'200px'},"show");
+        //         div1.animate({fontSize:'3em'},"show");
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("#strat").click(function(){
+        //         $("#div2").hide(3000);
+        //             alert("comlete");
+
+        //     });
+        //     // $("#stop").click(function(){
+        //     //     $("#div2").stop();
+        //     // });
+        // });
+
+        // $(document).ready(function(){
+        //     $("#div1").click(function(){
+        //         $("#div2").css("color","red").slideUp(2000).slideDown(3000);
+        //     });
+        // });
+
+        // $(document).ready(function () {
+        //     $("#div1").click(function () {
+        //         $("#div2").css("color", "red")
+        //             .slideUp(2000)
+        //             .slideDown(2000);
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("#text").click(function(){
+        //         alert($("#div3").text());
+        //     });
+        //     $("#html").click(function(){
+        //         alert($("#div3").html());
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("#btn").click(function(){
+        //         alert($("#inp").val()); 
+        //     });
+        // });
+        
+        // $(document).ready(function(){                                               
+        //     $("#btn").click(function(){
+        //         alert($("#a").attr("href"));
+        //     });
+        // });
+        //         $(document).ready(function(){
+        //   $("button").click(function(){
+        //     alert($("#w3s").attr("href"));
+        //   });
+        // });
+  
+        //  $(document).ready(function(){
+        //      $("#showtext").click(function(){
+        //          $("#div3").text("kishori patil");
+        //      });
+
+        //      $("#showhtml").click(function(){
+        //          $("#div4").html("<b>kishori shivaji patil</b>")
+        //      });
+
+        //      $("#showval").click(function(){
+        //          $("#val").val("patil");
+        //      });
+
+        //      $("#attr").click(function(){
+        //          $("#w").attr("target", "_BLANK")
+        //      });
+        //  });
+
+        // $(document).ready(function(){
+        //     $("#add").click(function(){
+
+        //         let div = document.createElement("div");
+        //         div.id = "ddiv";
+        //         div.innerText = "this is other div";
+        //         $("#ani").append(div);
+
+        //         $("#ani").append("<p>it is append</p>");
+        //         $("#ani").prepend("<p>it is prepend</p>");
+        //         $("#ani").after("<p>it is after</p>");
+        //         $("#ani").before("<p>it is before</p>");
+                
+        //     });
+        // });
+
+        // $(document).ready(function(){
+        //     $("#remove").click(function(){
+        //         $("p").remove("#text,#demo");
+        //     });
+        // });
+
+        $(document).ready(function(){
+            $
+        });
+  </script>
+
+</body>
+
+</html>
